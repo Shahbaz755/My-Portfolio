@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #142b4a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            color: #65d6ce;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 75px 20px;
+            background: #1e416b;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 10px auto 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #65d6ce;
+            color: #142b4a;
+            padding: 11px 22px;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .section {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+        }
+
+        .section h2 {
+            color: #1e416b;
+            margin-top: 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #e4f5f3;
+            color: #164b50;
+            padding: 10px 16px;
+            border-radius: 7px;
+        }
+
+        .project {
+            border: 1px solid #dce4ec;
+            padding: 18px;
+            border-radius: 9px;
+            margin: 15px 0;
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #1e416b;
+        }
+
+        footer {
+            text-align: center;
+            background: #142b4a;
+            color: white;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                gap: 12px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .section {
+                margin: 20px 12px;
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Software Engineering Student</h1>
+
+        <p>
+            I am learning to build useful software,
+            AI-powered applications and automation tools.
+        </p>
+
+        <a href="#projects" class="button">Explore My Projects</a>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a Software Engineering student learning
+            to build useful software.
+        </p>
+
+        <p>
+            My interests include web development, artificial
+            intelligence and automation. I want to turn my
+            ideas into practical software projects.
+        </p>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript - Beginner</span>
+            <span class="skill">AI - Learning</span>
+            <span class="skill">Automation - Learning</span>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Student Registration Form</h3>
+            <p>
+                An HTML form with input fields, dropdowns
+                and basic validation.
+            </p>
+            <p><strong>Technology:</strong> HTML, CSS</p>
+        </div>
+
+        <div class="project">
+            <h3>JavaScript Calculator</h3>
+            <p>
+                A calculator that performs addition,
+                subtraction, multiplication and division.
+            </p>
+            <p><strong>Technology:</strong> HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="project">
+            <h3>Future AI Project</h3>
+            <p>
+                I plan to build useful AI-powered applications
+                and automation tools as I continue learning.
+            </p>
+            <p><strong>Status:</strong> Planned</p>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            Thanks for visiting my portfolio!
+            I am always learning and building new skills.
+        </p>
+
+        <button class="button" onclick="showMessage()">
+            Say Hello
+        </button>
+
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>My Developer Portfolio | Built with HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Thanks for visiting! Have a great day.";
+        }
+    </script>
+
+</body>
+</html>
+</body>
+</html>
